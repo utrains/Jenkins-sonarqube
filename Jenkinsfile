@@ -12,7 +12,7 @@ pipeline {
             steps {
                 dir('./'){
                     withSonarQubeEnv('SonarServer') {
-                        sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Hermann90_fastfoodtest'
+                        sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=noeltatah_Jenkins-sonarqube'
                         }
                 }
             }
